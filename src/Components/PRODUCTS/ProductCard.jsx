@@ -1,96 +1,4 @@
-// import React from "react";
-// import environmentFriendly from "../../assets/environment-friendly.JPEG";
-// import freezerSafe from "../../assets/freezer-safe.JPEG";
-// import durable from "../../assets/durable.jpeg";
-// import safeNonToxic from "../../assets/safe-non-toxic-e1740695466749.JPEG";
-// import plantFiber from "../../assets/plant-fiber.JPEG";
-// import cancerFree from "../../assets/cancer-free-chemical-free.JPEG";
-// import biodegradable from "../../assets/biodegradable.JPEG";
-
-// function ProductCard() {
-//   return (
-//     <div className="ProductCard-section">
-//       <div className="slider">
-
-//         <div className="slide-track">
-
-//           <div className="Product-card">
-//             <img src={environmentFriendly} alt="" />
-//           </div>
-
-//           <div className="Product-card">
-//             <img src={freezerSafe} alt="" />
-//           </div>
-
-//           <div className="Product-card">
-//             <img src={durable} alt="" />
-//           </div>
-
-//           <div className="Product-card">
-//             <img src={safeNonToxic} alt="" />
-//           </div>
-
-//           <div className="Product-card">
-//             <img src={plantFiber} alt="" />
-//           </div>
-
-//           <div className="Product-card">
-//             <img src={cancerFree} alt="" />
-//           </div>
-
-//           <div className="Product-card">
-//             <img src={biodegradable} alt="" />
-//           </div>
-
-//           <div className="Product-card bg-card">
-//             <h2>100%<br />Eco Friendly</h2>
-//           </div>
-
-//           {/* Duplicate for infinite loop */}
-
-//           <div className="Product-card">
-//             <img src={environmentFriendly} alt="" />
-//           </div>
-
-//           <div className="Product-card">
-//             <img src={freezerSafe} alt="" />
-//           </div>
-
-//           <div className="Product-card">
-//             <img src={durable} alt="" />
-//           </div>
-
-//           <div className="Product-card">
-//             <img src={safeNonToxic} alt="" />
-//           </div>
-
-//           <div className="Product-card">
-//             <img src={plantFiber} alt="" />
-//           </div>
-
-//           <div className="Product-card">
-//             <img src={cancerFree} alt="" />
-//           </div>
-
-//           <div className="Product-card">
-//             <img src={biodegradable} alt="" />
-//           </div>
-
-//           <div className="Product-card bg-card">
-//             <h2>100%<br />Eco Friendly</h2>
-//           </div>
-
-//         </div>
-
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default ProductCard;
-
 import React from "react";
-
 import environmentFriendly from "../../assets/environment-friendly.JPEG";
 import freezerSafe from "../../assets/freezer-safe.JPEG";
 import durable from "../../assets/durable.jpeg";
@@ -165,9 +73,6 @@ function ProductCard() {
 
                 <div className="card-overlay">
                   <div className="overlay-content">
-
-                    {/* Icon yaha add karna */}
-                    {/* <img src={icon} className="overlay-icon" alt="" /> */}
 
                     <h3>{item.title}</h3>
                     <p>{item.desc}</p>

@@ -1,11 +1,11 @@
 import React from "react";
-import environmentFriendly from "../../assets/environment-friendly.JPEG";
-import freezerSafe from "../../assets/freezer-safe.JPEG";
+import environmentFriendly from "../../assets/environment-friendly.jpeg";
+import freezerSafe from "../../assets/freezer-safe.jpeg";
 import durable from "../../assets/durable.jpeg";
-import safeNonToxic from "../../assets/safe-non-toxic-e1740695466749.JPEG";
-import plantFiber from "../../assets/plant-fiber.JPEG";
-import cancerFree from "../../assets/cancer-free-chemical-free.JPEG";
-import biodegradable from "../../assets/biodegradable.JPEG";
+import safeNonToxic from "../../assets/safe-non-toxic-e1740695466749.jpeg";
+import plantFiber from "../../assets/plant-fiber.jpeg";
+import cancerFree from "../../assets/cancer-free-chemical-free.jpeg";
+import biodegradable from "../../assets/biodegradable.jpeg";
 
 const products = [
   {

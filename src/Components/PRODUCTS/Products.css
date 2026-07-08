@@ -1,0 +1,534 @@
+/* ===================================
+   Products Banner
+=================================== */
+
+.ProductsBanner-section {
+    width: 100%;
+}
+
+.ProductsBanner-image {
+    position: relative;
+    height: 580px;
+    overflow: hidden;
+}
+
+.ProductsBanner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 70%;
+    display: block;
+}
+
+/* ===================================
+   Infinite Goodness
+=================================== */
+
+.InfiniteGoodness-section {
+    width: 100%;
+}
+
+.InfiniteGoodness-text {
+    text-align: center;
+    margin-top: 10%;
+    padding: 0 20px;
+}
+
+.InfiniteGoodness-text h2 {
+    color: #44642F;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+
+.InfiniteGoodness-text p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/*Productcard*/
+.ProductCard-section{
+    width:100%;
+    padding:60px 80px;
+    overflow:hidden;
+}
+
+.slider{
+    width:100%;
+    overflow:hidden;
+}
+
+.slide-track{
+    display:flex;
+    width:max-content;
+    animation: scroll 35s linear infinite;
+}
+
+.Product-card{
+    width:300px;
+    height:420px;
+    margin-right:20px;
+    border-radius:20px;
+    overflow:hidden;
+    flex-shrink:0;
+    background:#fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.Product-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    transition:.4s;
+}
+
+.Product-card:hover img{
+    transform:scale(1.08);
+}
+
+.bg-card{
+    background:#4D6F35;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.bg-card h2{
+    font-size:42px;
+    line-height:1.2;
+}
+
+.card-overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(77,111,53,.75);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    opacity:0;
+    transition:.4s;
+}
+
+.overlay-content{
+    color:#fff;
+    transform:translateY(30px);
+    transition:.4s;
+    padding:20px;
+}
+
+.Product-card:hover .card-overlay{
+    opacity:1;
+}
+
+.Product-card:hover .overlay-content{
+    transform:translateY(0);
+}
+@keyframes scroll{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-50%);
+    }
+}
+
+/* ===================================
+   Product Resistant
+=================================== */
+
+.Productresistant-section{
+    width:100%;
+}
+
+.Productresistant-image{
+    position:relative;
+}
+
+.Productresistant-image img{
+    width:100%;
+    display:block;
+    height:auto;
+}
+
+.Productresistant-text{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:#fff;
+    text-align:center;
+    width:90%;
+}
+
+.Productresistant-text h2{
+    font-size:55px;
+    font-weight:600;
+    margin:0;
+    line-height:1.2;
+}
+
+
+/* ==========================
+      RESPONSIVE
+========================== */
+
+/* ===========================
+   1400px
+=========================== */
+
+@media (max-width:1400px){
+
+    .ProductsBanner-image{
+        height:550px;
+    }
+
+    .InfiniteGoodness-text h2{
+        font-size:46px;
+    }
+
+    .InfiniteGoodness-text p{
+        font-size:19px;
+    }
+
+    .ProductCard-section{
+        padding:60px;
+    }
+
+    .Product-card{
+        width:280px;
+        height:390px;
+    }
+
+    .bg-card h2{
+        font-size:38px;
+    }
+
+    .Productresistant-text h2{
+        font-size:50px;
+    }
+
+}
+
+/* ===========================
+   1200px
+=========================== */
+
+@media (max-width:1200px){
+
+    .ProductsBanner-image{
+        height:500px;
+    }
+
+    .InfiniteGoodness-text h2{
+        font-size:42px;
+    }
+
+    .InfiniteGoodness-text p{
+        font-size:18px;
+    }
+
+    .ProductCard-section{
+        padding:50px;
+    }
+
+    .Product-card{
+        width:250px;
+        height:360px;
+    }
+
+    .bg-card h2{
+        font-size:34px;
+    }
+
+    .overlay-content h3{
+        font-size:24px;
+    }
+
+    .overlay-content p{
+        font-size:16px;
+    }
+
+    .Productresistant-text h2{
+        font-size:44px;
+    }
+
+}
+
+/* ===========================
+   992px
+=========================== */
+
+@media (max-width:992px){
+
+    .ProductsBanner-image{
+        height:420px;
+    }
+
+    .ProductsBanner-image img{
+        object-position:center;
+    }
+
+    .InfiniteGoodness-text{
+        margin-top:80px;
+    }
+
+    .InfiniteGoodness-text h2{
+        font-size:38px;
+    }
+
+    .InfiniteGoodness-text p{
+        font-size:17px;
+        line-height:1.7;
+    }
+
+    .ProductCard-section{
+        padding:40px 30px;
+    }
+
+    .Product-card{
+        width:220px;
+        height:320px;
+        margin-right:15px;
+    }
+
+    .bg-card h2{
+        font-size:30px;
+    }
+
+    .overlay-content h3{
+        font-size:22px;
+    }
+
+    .overlay-content p{
+        font-size:15px;
+    }
+
+    .slide-track{
+        animation-duration:30s;
+    }
+
+    .Productresistant-text h2{
+        font-size:38px;
+    }
+
+}
+
+/* ===========================
+   768px
+=========================== */
+
+@media (max-width:768px){
+
+    .ProductsBanner-image{
+        height:350px;
+    }
+
+    .ProductsBanner-image img{
+        object-position:center;
+    }
+
+    .InfiniteGoodness-text{
+        margin-top:60px;
+    }
+
+    .InfiniteGoodness-text h2{
+        font-size:34px;
+    }
+
+    .InfiniteGoodness-text p{
+        font-size:16px;
+    }
+
+    .ProductCard-section{
+        padding:30px 20px;
+    }
+
+    .Product-card{
+        width:190px;
+        height:280px;
+    }
+
+    .bg-card h2{
+        font-size:26px;
+    }
+
+    .overlay-content{
+        padding:15px;
+    }
+
+    .overlay-content h3{
+        font-size:20px;
+    }
+
+    .overlay-content p{
+        font-size:14px;
+    }
+
+    .slide-track{
+        animation-duration:25s;
+    }
+
+    .Productresistant-text h2{
+        font-size:30px;
+    }
+
+}
+
+/* ===========================
+   576px
+=========================== */
+
+@media (max-width:576px){
+
+    .ProductsBanner-image{
+        height:280px;
+    }
+
+    .InfiniteGoodness-text{
+        margin-top:50px;
+    }
+
+    .InfiniteGoodness-text h2{
+        font-size:28px;
+    }
+
+    .InfiniteGoodness-text p{
+        font-size:15px;
+    }
+
+    .ProductCard-section{
+        padding:25px 15px;
+    }
+
+    .Product-card{
+        width:170px;
+        height:250px;
+        border-radius:15px;
+    }
+
+    .bg-card h2{
+        font-size:22px;
+    }
+
+    .overlay-content h3{
+        font-size:18px;
+    }
+
+    .overlay-content p{
+        font-size:13px;
+    }
+
+    .slide-track{
+        animation-duration:22s;
+    }
+
+    .Productresistant-text h2{
+        font-size:24px;
+    }
+
+}
+
+/* ===========================
+   425px
+=========================== */
+
+@media (max-width:425px){
+
+    .ProductsBanner-image{
+        height:220px;
+    }
+
+    .InfiniteGoodness-text h2{
+        font-size:24px;
+    }
+
+    .InfiniteGoodness-text p{
+        font-size:14px;
+        line-height:1.6;
+    }
+
+    .Product-card{
+        width:150px;
+        height:220px;
+    }
+
+    .bg-card h2{
+        font-size:20px;
+    }
+
+    .overlay-content{
+        padding:12px;
+    }
+
+    .overlay-content h3{
+        font-size:16px;
+    }
+
+    .overlay-content p{
+        font-size:12px;
+    }
+
+    .slide-track{
+        animation-duration:20s;
+    }
+
+    .Productresistant-text h2{
+        font-size:20px;
+    }
+
+}
+
+/* ===========================
+   375px
+=========================== */
+
+@media (max-width:375px){
+
+    .ProductsBanner-image{
+        height:200px;
+    }
+
+    .InfiniteGoodness-text h2{
+        font-size:22px;
+    }
+
+    .InfiniteGoodness-text p{
+        font-size:13px;
+    }
+
+    .Product-card{
+        width:140px;
+        height:205px;
+    }
+
+    .bg-card h2{
+        font-size:18px;
+    }
+
+    .overlay-content h3{
+        font-size:15px;
+    }
+
+    .overlay-content p{
+        font-size:11px;
+    }
+
+    .slide-track{
+        animation-duration:18s;
+    }
+
+    .Productresistant-text h2{
+        font-size:18px;
+    }
+
+}

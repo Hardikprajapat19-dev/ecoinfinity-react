@@ -1,0 +1,315 @@
+/* PlatesBanner */
+.PlatesBanner-section {
+    width: 100%;
+}
+
+.PlatesBanner-image {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+.PlatesBanner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+    display: block;
+}
+
+/* PlatesBenefits */
+.PlatesBenefits-section {
+    width: 100%;
+}
+
+.PlatesBenefits-text {
+    text-align: center;
+    margin-top: 8%;
+    padding: 0 20px;
+}
+
+.PlatesBenefits-text h2 {
+    color: #44642F;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.PlatesBenefits-text p {
+    margin: 30px auto;
+    font-size: 25px;
+    line-height: 1.6;
+    max-width: 900px;
+}
+
+/*PlatesCollection*/
+.plate-filter-box {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    position: sticky;
+    top: 100px;
+}
+
+.filter-box h3 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.plate-filter-box li {
+    padding: 12px 0;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+    transition: .3s;
+}
+
+.plate-filter-box li:hover {
+    color: #198754;
+    padding-left: 10px;
+}
+
+/* Card */
+
+.plate-card {
+    border-radius: 18px;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.plate-card:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .15);
+}
+
+/* Image Wrapper */
+.plate-img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.plate-img-wrapper .card-img-top {
+    width: 100%;
+    height: 240px;
+    object-fit: contain;
+    transition: transform 1s ease;
+}
+
+/* Image Zoom */
+.plate-card:hover .card-img-top {
+    transform: scale(1.08);
+}
+
+/* Transparent Overlay */
+.plate-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity .4s ease;
+    background: transparent;
+    pointer-events: none;
+}
+
+.plate-card:hover .card-overlay {
+    opacity: 1;
+}
+
+.plate-overlay-content {
+    transform: translateY(20px);
+    transition: transform .4s ease;
+}
+
+.plate-card:hover .overlay-content {
+    transform: translateY(0);
+}
+
+.plate-view-btn {
+    pointer-events: auto;
+    border-radius: 30px;
+    padding: 10px 25px;
+}
+.PlatesDetails-section{
+    width:100%;
+}
+
+.PlatesDetails-image,
+.PlatesDetails-image img{
+    width:100%;
+    display:block;
+}
+
+.PlatesDetails-image img{
+    height:auto;
+}
+
+
+/* ==========================
+      RESPONSIVE
+========================== */
+
+/* =========================
+   1400px
+========================= */
+
+@media (max-width:1400px){
+
+    .PlatesBanner-image{
+        height:480px;
+    }
+
+    .PlatesBenefits-text h2{
+        font-size:46px;
+    }
+
+    .PlatesBenefits-text p{
+        font-size:23px;
+    }
+
+}
+
+/* =========================
+   1200px
+========================= */
+
+@media (max-width:1200px){
+
+    .PlatesBanner-image{
+        height:430px;
+    }
+
+    .PlatesBenefits-text{
+        margin-top:7%;
+    }
+
+    .PlatesBenefits-text h2{
+        font-size:42px;
+    }
+
+    .PlatesBenefits-text p{
+        font-size:22px;
+    }
+
+}
+
+/* =========================
+   992px
+========================= */
+
+@media (max-width:992px){
+
+    .PlatesBanner-image{
+        height:380px;
+    }
+
+    .PlatesBenefits-text{
+        margin-top:70px;
+    }
+
+    .PlatesBenefits-text h2{
+        font-size:38px;
+    }
+
+    .PlatesBenefits-text p{
+        font-size:20px;
+    }
+
+}
+
+/* =========================
+   768px
+========================= */
+
+@media (max-width:768px){
+
+    .PlatesBanner-image{
+        height:320px;
+    }
+
+    .PlatesBenefits-text{
+        margin-top:60px;
+        padding:0 18px;
+    }
+
+    .PlatesBenefits-text h2{
+        font-size:34px;
+    }
+
+    .PlatesBenefits-text p{
+        font-size:18px;
+        margin:25px auto;
+    }
+
+}
+
+/* =========================
+   576px
+========================= */
+
+@media (max-width:576px){
+
+    .PlatesBanner-image{
+        height:260px;
+    }
+
+    .PlatesBenefits-text{
+        margin-top:50px;
+        padding:0 15px;
+    }
+
+    .PlatesBenefits-text h2{
+        font-size:30px;
+    }
+
+    .PlatesBenefits-text p{
+        font-size:17px;
+        margin:20px auto;
+    }
+
+}
+
+/* =========================
+   425px
+========================= */
+
+@media (max-width:425px){
+
+    .PlatesBanner-image{
+        height:220px;
+    }
+
+    .PlatesBenefits-text{
+        margin-top:40px;
+    }
+
+    .PlatesBenefits-text h2{
+        font-size:26px;
+    }
+
+    .PlatesBenefits-text p{
+        font-size:16px;
+        margin:18px auto;
+        line-height:1.7;
+    }
+
+}
+
+/* =========================
+   375px
+========================= */
+
+@media (max-width:375px){
+
+    .PlatesBanner-image{
+        height:190px;
+    }
+
+    .PlatesBenefits-text h2{
+        font-size:24px;
+    }
+
+    .PlatesBenefits-text p{
+        font-size:15px;
+        margin:15px auto;
+    }
+
+}

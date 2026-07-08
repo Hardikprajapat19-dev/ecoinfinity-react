@@ -1,0 +1,441 @@
+/* NAVBAR WRAPPER */
+.navbar-wrapper {
+  width: 100%;
+  background: white;
+  padding: 0;
+}
+
+/* LOGO SECTION - SABSE UPER CENTER */
+.logo-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0 15px 0;
+  background: white;
+}
+
+.navbar-logo {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Navbar Item Styling */
+.navbar {
+  padding: 15px 0;
+}
+
+.navbar-nav .nav-item {
+  margin: 0 15px;
+  font-weight: 600;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: black;
+  transition: color 0.3s ease;
+  font-size: 15px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #2d7a4a;
+}
+
+/* Mega Menu Dropdown Styling */
+.dropdown-menu.mega-menu {
+  width: 100%;
+  left: 0 ;
+  right: 0 ;
+  padding: 20px;
+  border-radius: 0;
+  margin-top: 5px;
+  z-index: 10;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.navbar-nav .dropdown-toggle:hover~.dropdown-menu.mega-menu,
+.dropdown-menu.mega-menu:hover {
+  display: block ;
+  opacity: 1 ;
+  visibility: visible ;
+}
+
+.navbar-nav .dropdown-toggle:focus~.dropdown-menu.mega-menu {
+  display: block ;
+}
+
+/* Product Item Image Styling */
+.product-item img {
+  max-width: 90%;
+  margin-right: 15px;
+  border-radius: 15px;
+  margin-left: 20%;
+  transition: transform 0.3s ease;
+}
+
+.product-item img:hover {
+  transform: scale(1.05);
+}
+
+.product-item1 img {
+  width: 90%;
+  margin-right: 15px;
+  border-radius: 15px;
+  margin-left: 20%;
+  height: 150px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-item1 img:hover {
+  transform: scale(1.05);
+}
+
+/* Dropdown List Item Styling */
+.mega-menu .col-md-2 ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.mega-menu .col-md-2 h6 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.mega-menu .col-md-2 ul li {
+  margin: 10px 0;
+  list-style-type: none;
+}
+
+.mega-menu .col-md-2 ul li a {
+  color: rgb(33 37 41 / 75%);
+  text-decoration: none;
+  font-size: 10px;
+  transition: color 0.2s ease;
+}
+
+.mega-menu .col-md-2 ul li a:hover {
+  color: #000;
+  font-weight: 600;
+}
+
+/* Left Content */
+.mega-content {
+  padding: 20px;
+}
+
+.mega-title {
+  font-size: 34px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.mega-text {
+  font-size: 16px;
+  color: #6c757d;
+  line-height: 28px;
+}
+
+/* SWIPER CONTAINER - GAP NAVBAR KE NICHE */
+.swiper {
+  margin-top: 30px ;
+  position: relative;
+  z-index: 1;
+}
+
+/* HOME */
+#app {
+  height: 100%;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+/* 
+body {
+  font-family:
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+} */
+
+
+
+/* Base state */
+[data-animate] {
+  opacity: 0;
+}
+
+/* fade-up animation */
+[data-animate="fade-up"] {
+  transform: translateY(80px);
+}
+
+[data-animate="fade-up"].animated {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.8s ease, transform 1s ease;
+}
+
+/* fade-left animation */
+[data-animate="fade-left"] {
+  transform: translateX(150px);
+}
+
+[data-animate="fade-left"].animated {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.8s ease, transform 1s ease;
+}
+
+/* fade-right animation */
+[data-animate="fade-right"] {
+  transform: translateX(-150px);
+}
+
+[data-animate="fade-right"].animated {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.8s ease, transform 1s ease;
+}
+
+/* zoom-in animation */
+[data-animate="zoom-in"] {
+  transform: scale(0.85);
+}
+
+[data-animate="zoom-in"].animated {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* ==========================
+      RESPONSIVE
+========================== */
+
+/* ===========================
+   1400px
+=========================== */
+
+@media (max-width: 1400px) {
+
+  .navbar-nav .nav-item {
+    margin: 0 12px;
+  }
+
+  .mega-title {
+    font-size: 30px;
+  }
+
+  .mega-text {
+    font-size: 15px;
+  }
+
+}
+
+/* ===========================
+   1200px
+=========================== */
+
+@media (max-width: 1200px) {
+
+  .navbar-logo {
+    height: 70px;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 0 8px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 14px;
+  }
+
+  .mega-title {
+    font-size: 28px;
+  }
+
+  .mega-text {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .product-item img {
+    margin-left: 10%;
+  }
+
+}
+
+/* ===========================
+   992px
+=========================== */
+
+@media (max-width: 992px) {
+
+  .navbar {
+    padding: 10px 0;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 10px 0;
+  }
+
+  .dropdown-menu.mega-menu {
+    padding: 20px;
+  }
+
+  .mega-content {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .mega-title {
+    font-size: 26px;
+  }
+
+  .product-item img {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+  }
+
+}
+
+/* ===========================
+   768px
+=========================== */
+
+@media (max-width: 768px) {
+
+  .logo-section {
+    padding: 15px 0;
+  }
+
+  .navbar-logo {
+    height: 60px;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 8px 0;
+  }
+
+  .mega-title {
+    font-size: 24px;
+  }
+
+  .mega-text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .product-item img {
+    max-width: 100%;
+    margin: auto;
+        margin-top: 10px;
+
+  }
+
+  [data-animate="fade-left"]{
+    transform:translateX(100px);
+  }
+
+  [data-animate="fade-right"]{
+    transform:translateX(-100px);
+  }
+
+  [data-animate="fade-up"]{
+    transform:translateY(50px);
+  }
+
+}
+
+/* ===========================
+   576px
+=========================== */
+
+@media (max-width: 576px) {
+
+  .navbar-logo {
+    height: 50px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 14px;
+  }
+
+  .mega-title {
+    font-size: 22px;
+  }
+
+  .mega-text {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+}
+
+/* ===========================
+   425px
+=========================== */
+
+@media (max-width: 425px) {
+
+  .logo-section {
+    padding: 12px 0;
+  }
+
+  .navbar-logo {
+    height: 45px;
+  }
+
+  .mega-title {
+    font-size: 20px;
+  }
+
+  .mega-text {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+}
+
+/* ===========================
+   375px
+=========================== */
+
+@media (max-width: 375px) {
+
+  .navbar-logo {
+    height: 40px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 13px;
+  }
+
+  .mega-title {
+    font-size: 18px;
+  }
+
+  .mega-text {
+    font-size: 11px;
+    line-height: 18px;
+  }
+
+}

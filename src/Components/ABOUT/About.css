@@ -1,0 +1,705 @@
+/* ===========================
+   About Banner
+=========================== */
+
+.About-section {
+    width: 100%;
+}
+
+.About-section-image {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+
+.About-section-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+    display: block;
+}
+
+/* ===========================
+   Vision Mission
+=========================== */
+
+.VisionMission-section{
+    width:100%;
+    background:#A0744B;
+    position:relative;
+    padding:120px 0;
+    overflow:hidden;
+    min-height:700px;
+}
+
+.VisionMission-card{
+    position:absolute;
+    width:55%;
+    padding:30px 40px;
+    background:rgba(255,255,255,.18);
+    backdrop-filter:blur(5px);
+    color:#fff;
+    border-radius:10px;
+    box-sizing:border-box;
+}
+
+.vision-card{
+    top:120px;
+    left:5%;
+}
+
+.mission-card{
+    top:390px;
+    right:5%;
+}
+
+.VisionMission-card h2{
+    font-size:36px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.VisionMission-card h2::after{
+    content:"";
+    display:block;
+    width:70px;
+    height:4px;
+    margin-top:10px;
+    border-radius:2px;
+    background:linear-gradient(to right,#fff,#ffffff55);
+}
+
+.VisionMission-card p{
+    font-size:20px;
+    line-height:1.8;
+    margin:0;
+}
+
+/*CoreValues*/
+.CoreValues-section {
+    width: 100%;
+}
+
+.CoreValues-text {
+    text-align: center;
+}
+
+.CoreValues-text h2 {
+    margin-top: 5%;
+    color: #44642F;
+    font-size: 50px;
+}
+
+.CoreValues-text p {
+    margin: 30px;
+    font-size: 18px;
+}
+
+/* ===========================
+   Infrastructure
+=========================== */
+
+.Infrastructure-section{
+    width:100%;
+    height:600px;
+    margin-top:100px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+.Infrastructure-overlay{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.35);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.Infrastructure-text{
+    text-align:center;
+    color:#fff;
+    padding:0 20px;
+}
+
+.Infrastructure-text h2{
+    font-size:60px;
+    font-weight:600;
+    margin:0;
+}
+
+/*CompanyIntroduction*/
+/* ===================================
+   Company Introduction
+=================================== */
+
+.CompanyIntroduction-section {
+  width: 100%;
+  padding: 80px 0;
+}
+
+.CompanyIntroduction-card {
+  width: 35%;
+  min-height: 200px;
+  padding: 35px;
+  border-radius: 10px;
+  box-shadow: rgba(0,0,0,.35) 0 5px 15px;
+  margin-bottom: 50px;
+  transition: .4s;
+  box-sizing: border-box;
+}
+
+.CompanyIntroduction-card:hover {
+  transform: translateY(-10px);
+}
+
+.CompanyIntroduction-card p {
+  margin: 0;
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+/* Left */
+.left-card {
+  margin-left: 5%;
+}
+
+/* Right */
+.right-card {
+  margin-left: auto;
+  margin-right: 5%;
+}
+
+/* ===================================
+   Passionate Team
+=================================== */
+
+.PassionateTeam-section {
+    width: 100%;
+    padding: 60px;
+    background-color: #44642F;
+    height: 800px;
+    margin-top: 10%;
+    box-sizing: border-box;
+}
+
+.PassionateTeam-text {
+    color: #fff;
+    text-align: center;
+    margin-top: 8%;
+}
+
+.PassionateTeam-text h2 {
+    font-size: 50px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.PassionateTeam-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PassionateTeam-image img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-top: 6%;
+}
+
+/* ===========================
+   1400px
+=========================== */
+
+@media (max-width:1400px){
+
+    .About-section-image{
+        height:550px;
+    }
+
+    .VisionMission-card{
+        width:58%;
+    }
+
+    .VisionMission-card h2{
+        font-size:34px;
+    }
+
+    .VisionMission-card p{
+        font-size:19px;
+    }
+
+    .CoreValues-section{
+        padding:10px 20px;
+        height:400px;
+    }
+
+    .CoreValues-text h2{
+        font-size:46px;
+    }
+
+    .Infrastructure-section{
+        height:560px;
+    }
+
+    .Infrastructure-text h2{
+        font-size:54px;
+    }
+
+    .CompanyIntroduction-card{
+        width:40%;
+    }
+
+    .PassionateTeam-image img{
+        width:55%;
+    }
+
+}
+
+/* ===========================
+   1200px
+=========================== */
+
+@media (max-width:1200px){
+
+    .About-section-image{
+        height:500px;
+    }
+
+    .VisionMission-section{
+        min-height:650px;
+    }
+
+    .VisionMission-card{
+        width:62%;
+    }
+
+    .vision-card{
+        top:90px;
+    }
+
+    .mission-card{
+        top:340px;
+    }
+
+    .VisionMission-card h2{
+        font-size:30px;
+    }
+
+    .VisionMission-card p{
+        font-size:18px;
+    }
+
+    .CoreValues-text h2{
+        font-size:42px;
+    }
+
+    .CoreValues-text p{
+        font-size:17px;
+    }
+
+    .Infrastructure-section{
+        height:520px;
+    }
+
+    .Infrastructure-text h2{
+        font-size:48px;
+    }
+
+    .CompanyIntroduction-section{
+        padding:70px 0;
+    }
+
+    .CompanyIntroduction-card{
+        width:43%;
+    }
+
+    .CompanyIntroduction-card p{
+        font-size:16px;
+    }
+
+    .PassionateTeam-section{
+        height:720px;
+    }
+
+    .PassionateTeam-text h2{
+        font-size:45px;
+    }
+
+    .PassionateTeam-image img{
+        width:60%;
+    }
+
+}
+
+/* ===========================
+   1024px
+=========================== */
+
+@media(max-width:1024px){
+
+    .VisionMission-section{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        min-height:auto;
+        padding:70px 20px;
+        gap:35px;
+    }
+
+    .VisionMission-card{
+        position:relative;
+        top:auto;
+        left:auto;
+        right:auto;
+        width:90%;
+        max-width:850px;
+        padding:30px;
+    }
+    
+}
+
+/* ===========================
+   992px
+=========================== */
+
+@media (max-width:992px){
+
+    .About-section-image{
+        height:420px;
+    }
+
+    .VisionMission-card{
+        width:92%;
+    }
+
+    .VisionMission-card h2{
+        font-size:30px;
+    }
+
+    .VisionMission-card p{
+        font-size:17px;
+    }
+
+    .CoreValues-section{
+        padding:10px 20px;
+    }
+
+    .CoreValues-text h2{
+        font-size:38px;
+    }
+
+    .CoreValues-text p{
+        font-size:16px;
+        line-height:1.8;
+    }
+
+    .Infrastructure-section{
+        height:450px;
+
+        /* Mobile/Tablet par fixed remove */
+        background-attachment:scroll;
+    }
+
+    .Infrastructure-text h2{
+        font-size:40px;
+    }
+
+    .CompanyIntroduction-section{
+        padding:60px 20px;
+    }
+
+    .CompanyIntroduction-card{
+        width:100%;
+        max-width:800px;
+        margin:0 auto 30px;
+    }
+
+    .left-card,
+    .right-card{
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .PassionateTeam-section{
+        height:auto;
+        padding:60px 30px;
+    }
+
+    .PassionateTeam-text{
+        margin-top:0;
+    }
+
+    .PassionateTeam-text h2{
+        font-size:40px;
+    }
+
+    .PassionateTeam-image img{
+        width:75%;
+        margin-top:40px;
+    }
+
+}
+
+/* ===========================
+   768px
+=========================== */
+
+@media (max-width:768px){
+
+    .About-section-image{
+        height:340px;
+    }
+
+    .About-section-image img{
+        object-position:center;
+    }
+
+    .VisionMission-section{
+        padding:60px 15px;
+    }
+
+    .VisionMission-card{
+        width:95%;
+        padding:25px;
+    }
+
+    .VisionMission-card h2{
+        font-size:28px;
+    }
+
+    .VisionMission-card p{
+        font-size:16px;
+        line-height:1.7;
+    }
+
+    .CoreValues-section{
+        padding:20px 15px;
+    }
+
+    .CoreValues-text h2{
+        font-size:34px;
+        margin-bottom:35px;
+    }
+
+    .CoreValues-text p{
+        font-size:15px;
+        margin-bottom:22px;
+    }
+
+    .Infrastructure-section{
+        height:380px;
+        margin-top:70px;
+    }
+
+    .Infrastructure-text h2{
+        font-size:34px;
+    }
+
+    .CompanyIntroduction-card{
+        padding:28px;
+    }
+
+    .CompanyIntroduction-card p{
+        font-size:16px;
+        line-height:1.7;
+    }
+
+    .PassionateTeam-section{
+        padding:50px 20px;
+    }
+
+    .PassionateTeam-text h2{
+        font-size:34px;
+    }
+
+    .PassionateTeam-image img{
+        width:90%;
+    }
+
+}
+
+/* ===========================
+   576px
+=========================== */
+
+@media (max-width:576px){
+
+    .About-section-image{
+        height:280px;
+    }
+
+    .VisionMission-card{
+        width:100%;
+        padding:22px;
+    }
+
+    .VisionMission-card h2{
+        font-size:24px;
+    }
+
+    .VisionMission-card p{
+        font-size:15px;
+    }
+
+    .CoreValues-section{
+        padding:10px 15px;
+    }
+
+    .CoreValues-text h2{
+        font-size:30px;
+    }
+
+    .CoreValues-text p{
+        font-size:14px;
+        line-height:1.7;
+    }
+
+    .Infrastructure-section{
+        height:320px;
+        margin-top:90px;
+    }
+
+    .Infrastructure-text h2{
+        font-size:28px;
+    }
+
+    .CompanyIntroduction-card{
+        padding:24px;
+    }
+
+    .CompanyIntroduction-card p{
+        font-size:15px;
+    }
+
+    .PassionateTeam-section{
+        padding:45px 15px;
+    }
+
+    .PassionateTeam-text h2{
+        font-size:28px;
+    }
+
+    .PassionateTeam-image img{
+        width:100%;
+        margin-top:30px;
+    }
+
+}
+
+/* ===========================
+   425px
+=========================== */
+
+@media(max-width:425px){
+
+    .About-section-image{
+        height:220px;
+    }
+
+    .VisionMission-section{
+        padding:50px 12px;
+    }
+
+    .VisionMission-card{
+        padding:18px;
+    }
+
+    .VisionMission-card h2{
+        font-size:22px;
+    }
+
+    .VisionMission-card p{
+        font-size:14px;
+        line-height:1.6;
+    }
+
+    .CoreValues-section{
+        padding:50px 12px;
+        height: 400px;
+    }
+
+    .CoreValues-text h2{
+        font-size:26px;
+    }
+
+    .CoreValues-text p{
+        font-size:13px;
+    }
+
+    .Infrastructure-section{
+        height:280px;
+        margin-top:100px;
+    }
+
+    .Infrastructure-text h2{
+        font-size:24px;
+    }
+
+    .CompanyIntroduction-section{
+        padding:50px 15px;
+    }
+
+    .CompanyIntroduction-card{
+        padding:20px;
+    }
+
+    .CompanyIntroduction-card p{
+        font-size:14px;
+    }
+
+    .PassionateTeam-text h2{
+        font-size:24px;
+    }
+
+}
+
+/* ===========================
+   375px
+=========================== */
+
+@media(max-width:375px){
+
+    .About-section-image{
+        height:190px;
+    }
+
+    .VisionMission-card h2{
+        font-size:20px;
+    }
+
+    .VisionMission-card p{
+        font-size:13px;
+    }
+
+    .CoreValues-section{
+        padding:50px 12px;
+    }
+
+    .CoreValues-text h2{
+        font-size:24px;
+    }
+
+    .CoreValues-text p{
+        font-size:12px;
+        line-height:1.6;
+    }
+
+    .CompanyIntroduction-card{
+        padding:18px;
+    }
+
+    .CompanyIntroduction-card p{
+        font-size:13px;
+    }
+
+    .PassionateTeam-text h2{
+        font-size:22px;
+    }
+
+}

@@ -1,0 +1,217 @@
+.CONTACTINQUIRYFORM-section{
+    width: 100%;
+}
+.CONTACTINQUIRYFORM-image{
+    position: relative;
+}
+
+.CONTACTINQUIRYFORM-image img{
+    width:100%;
+    display:block;
+}
+
+.CONTACTINQUIRYFORM-form{
+    position:absolute;
+    inset:0;
+    display:flex;
+    align-items:center;
+}
+
+.contact-left{
+    color:black;
+    background-color: white;
+    padding:40px;
+    border-radius: 20px;
+}
+
+.contact-right{
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+}
+
+.contact-right .form-control{
+    height:50px;
+}
+
+.contact-right textarea.form-control{
+    height:auto;
+    
+}
+.CONTACTINQUIRYFORM-form .form-control:focus,
+.CONTACTINQUIRYFORM-form .form-select:focus,
+.CONTACTINQUIRYFORM-form .btn:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #ced4da;
+}
+.CONTACTINQUIRYFORM-form .form-control {
+    transition: all 0.6s ease;
+}
+
+.CONTACTINQUIRYFORM-form .form-control:hover {
+    transform: translateY(-5px);
+}
+
+
+/* ==========================
+      RESPONSIVE
+========================== */
+
+/* =====================================
+   1400px
+===================================== */
+
+@media (max-width:1400px){
+
+    .contact-left,
+    .contact-right{
+        padding:35px;
+    }
+
+}
+
+/* =====================================
+   1200px
+===================================== */
+
+@media (max-width:1200px){
+
+    .contact-left,
+    .contact-right{
+        padding:30px;
+    }
+
+    .contact-left h2{
+        font-size:36px;
+    }
+
+}
+
+/* =====================================
+   992px
+===================================== */
+
+@media (max-width:992px){
+
+    .CONTACTINQUIRYFORM-image{
+        background:#f5f5f5;
+    }
+
+    .CONTACTINQUIRYFORM-image img{
+        display:none;
+    }
+
+    .CONTACTINQUIRYFORM-form{
+        position:static;
+        padding:60px 20px;
+    }
+
+    .contact-left{
+        margin-bottom:30px;
+    }
+
+}
+
+/* =====================================
+   768px
+===================================== */
+
+@media (max-width:768px){
+
+    .CONTACTINQUIRYFORM-form{
+        padding:50px 15px;
+    }
+
+    .contact-left,
+    .contact-right{
+        padding:25px;
+    }
+
+    .contact-left h2{
+        font-size:30px;
+    }
+
+    .contact-left p,
+    .contact-left h5{
+        font-size:16px;
+    }
+
+    .contact-right .form-control{
+        height:48px;
+    }
+
+    .contact-right textarea.form-control{
+        height:140px;
+    }
+
+}
+
+/* =====================================
+   576px
+===================================== */
+
+@media (max-width:576px){
+
+    .contact-left,
+    .contact-right{
+        padding:20px;
+        border-radius:15px;
+    }
+
+    .contact-left h2{
+        font-size:26px;
+    }
+
+    .contact-right .btn{
+        width:100%;
+    }
+
+}
+
+/* =====================================
+   425px
+===================================== */
+
+@media (max-width:425px){
+
+    .CONTACTINQUIRYFORM-form{
+        padding:40px 12px;
+    }
+
+    .contact-left h2{
+        font-size:24px;
+    }
+
+    .contact-left p,
+    .contact-left h5{
+        font-size:15px;
+    }
+
+    .contact-right .form-control{
+        font-size:14px;
+    }
+
+}
+
+/* =====================================
+   375px
+===================================== */
+
+@media (max-width:375px){
+
+    .contact-left,
+    .contact-right{
+        padding:18px;
+    }
+
+    .contact-left h2{
+        font-size:22px;
+    }
+
+    .contact-right .btn{
+        padding:10px;
+        font-size:14px;
+    }
+
+}

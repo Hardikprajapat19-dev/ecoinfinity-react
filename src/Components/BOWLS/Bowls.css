@@ -1,0 +1,381 @@
+/* /* ===================================
+   Bowls Banner
+=================================== */
+
+.BowlsBanner-section {
+    width: 100%;
+}
+
+.BowlsBanner-image {
+    position: relative;
+    height: 520px;
+    overflow: hidden;
+}
+
+.BowlsBanner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 100%;
+    display: block;
+}
+
+.BowlsBanner-text {
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+.BowlsBanner-text h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* BowlsBenefits */
+.BowlsBenefits-section {
+    width: 100%;
+}
+
+.BowlsBenefits-text {
+    text-align: center;
+    margin-top: 10%;
+    padding: 0 20px;
+}
+
+.BowlsBenefits-text h2 {
+    color: #44642F;
+    font-size: 50px;
+}
+
+.BowlsBenefits-text p {
+    margin: 30px auto;
+    font-size: 25px;
+    line-height: 1.6;
+    max-width: 900px;
+}
+
+/*BowlCollection*/
+.filter-box {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    position: sticky;
+    top: 100px;
+}
+
+.filter-box li {
+    padding: 12px 0;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+    transition: .3s;
+}
+
+.filter-box li:hover {
+    color: #198754;
+    padding-left: 10px;
+}
+.filter-box-mb-3{
+   text-align: center;
+   font-size: 30px;
+}
+/* Card */
+
+.bowl-card {
+    border-radius: 18px;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.bowl-card:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .15);
+}
+
+/* Image Wrapper */
+.card-img-wrapper {
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.card-img-top {
+    width: 100%;
+    height: 240px;
+    object-fit: contain;
+    transition: transform 1s ease;
+}
+
+/* Image Zoom */
+.bowl-card:hover .card-img-top {
+    transform: scale(1.08);
+}
+
+/* Transparent Overlay */
+.card-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity .4s ease;
+    background: transparent;
+    pointer-events: auto;
+}
+
+.bowl-card:hover .card-overlay {
+    opacity: 1;
+}
+
+.overlay-content {
+    transform: translateY(20px);
+    transition: transform .4s ease;
+}
+
+.bowl-card:hover .overlay-content {
+    transform: translateY(0);
+}
+
+.view-btn {
+    border-radius: 30px;
+    padding: 10px 25px;
+    pointer-events: auto;
+    position: relative;
+    z-index: 10;
+}
+.bowl-details-section {
+    width: 100%;
+}
+
+.bowl-details-image {
+      width: 100%;
+
+}
+
+.bowl-details-image img {
+   display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+/* ==========================
+      RESPONSIVE
+========================== */
+
+/* ===========================
+   1400px
+=========================== */
+
+@media (max-width:1400px){
+
+    .BowlsBanner-image{
+        height:500px;
+    }
+
+    .BowlsBanner-text h2{
+        font-size:46px;
+    }
+
+    .BowlsBenefits-text h2{
+        font-size:46px;
+    }
+
+    .BowlsBenefits-text p{
+        font-size:23px;
+    }
+
+}
+
+/* ===========================
+   1200px
+=========================== */
+
+@media (max-width:1200px){
+
+    .BowlsBanner-image{
+        height:460px;
+    }
+
+    .BowlsBanner-text{
+        left:22%;
+    }
+
+    .BowlsBanner-text h2{
+        font-size:42px;
+    }
+
+    .BowlsBenefits-text{
+        margin-top:8%;
+    }
+
+    .BowlsBenefits-text h2{
+        font-size:42px;
+    }
+
+    .BowlsBenefits-text p{
+        font-size:22px;
+    }
+
+}
+
+/* ===========================
+   992px
+=========================== */
+
+@media (max-width:992px){
+
+    .BowlsBanner-image{
+        height:400px;
+    }
+
+    .BowlsBanner-text{
+        left:25%;
+        top:68%;
+    }
+
+    .BowlsBanner-text h2{
+        font-size:36px;
+    }
+
+    .BowlsBenefits-text{
+        margin-top:70px;
+    }
+
+    .BowlsBenefits-text h2{
+        font-size:38px;
+    }
+
+    .BowlsBenefits-text p{
+        font-size:20px;
+    }
+
+}
+
+/* ===========================
+   768px
+=========================== */
+
+@media (max-width:768px){
+
+    .BowlsBanner-image{
+        height:320px;
+    }
+
+    .BowlsBanner-image img{
+        object-position:center;
+    }
+
+    .BowlsBanner-text{
+        left:50%;
+        top:70%;
+    }
+
+    .BowlsBanner-text h2{
+        font-size:30px;
+    }
+
+    .BowlsBenefits-text{
+        margin-top:60px;
+        padding:0 18px;
+    }
+
+    .BowlsBenefits-text h2{
+        font-size:34px;
+    }
+
+    .BowlsBenefits-text p{
+        font-size:18px;
+        margin:25px auto;
+    }
+
+}
+
+/* ===========================
+   576px
+=========================== */
+
+@media (max-width:576px){
+
+    .BowlsBanner-image{
+        height:260px;
+    }
+
+    .BowlsBanner-text h2{
+        font-size:24px;
+    }
+
+    .BowlsBenefits-text{
+        margin-top:50px;
+        padding:0 15px;
+    }
+
+    .BowlsBenefits-text h2{
+        font-size:30px;
+    }
+
+    .BowlsBenefits-text p{
+        font-size:17px;
+        margin:20px auto;
+    }
+
+}
+
+/* ===========================
+   425px
+=========================== */
+
+@media (max-width:425px){
+
+    .BowlsBanner-image{
+        height:220px;
+    }
+
+    .BowlsBanner-text h2{
+        font-size:20px;
+    }
+
+    .BowlsBenefits-text{
+        margin-top:40px;
+    }
+
+    .BowlsBenefits-text h2{
+        font-size:26px;
+    }
+
+    .BowlsBenefits-text p{
+        font-size:16px;
+        margin:18px auto;
+        line-height:1.7;
+    }
+
+}
+
+/* ===========================
+   375px
+=========================== */
+
+@media (max-width:375px){
+
+    .BowlsBanner-image{
+        height:200px;
+    }
+
+    .BowlsBanner-text h2{
+        font-size:18px;
+    }
+
+    .BowlsBenefits-text h2{
+        font-size:24px;
+    }
+
+    .BowlsBenefits-text p{
+        font-size:15px;
+        margin:15px auto;
+    }
+
+}

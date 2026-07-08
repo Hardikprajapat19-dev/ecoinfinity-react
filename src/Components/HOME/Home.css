@@ -1,0 +1,1413 @@
+ .mySwiper {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  background: transparent;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-top: -108px;
+  /* DESKTOP PE YE RAHEGA */
+  display: block;
+}
+
+/* ========== NAVIGATION ARROWS CUSTOMIZE ========== */
+
+/* Default arrow को hide करो */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none !important;
+}
+
+/* Left Arrow */
+.swiper-button-prev {
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  user-select: none;
+  cursor: pointer;
+}
+
+.swiper-button-prev::before {
+  font-size: 32px;
+  line-height: 1;
+  display: block;
+}
+
+/* Right Arrow */
+.swiper-button-next {
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  user-select: none;
+  cursor: pointer;
+}
+
+.swiper-button-next::before {
+  font-size: 32px;
+  line-height: 1;
+  display: block;
+}
+
+/* Disabled state */
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.swiper-button-next.swiper-button-disabled:hover,
+.swiper-button-prev.swiper-button-disabled:hover {
+  background: rgba(0, 0, 0, 0.3);
+  transform: none;
+}
+
+/* Selection/Drag Prevention */
+/* .swiper {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.swiper-slide {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+} */
+
+/* Remove blue highlight on click */
+.swiper-slide::-moz-selection {
+  background: transparent;
+}
+
+.swiper-slide::selection {
+  background: transparent;
+}
+
+img {
+  -webkit-user-drag: none;  
+}
+
+/*productshow*/
+.Product-Show-case-section {
+  width: 100%;
+}
+
+.Product-Show-case-image {
+  position: relative;
+  height: 700px;
+  /* apne hisab se */
+  overflow: hidden;
+}
+
+.Product-Show-case-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.Product-Show-case-text {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.Product-Show-case-text h2 {
+  /* font-size: clamp(2rem, 5vw, 4rem); */
+  font-size: 50px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.ManufacturingFacility-section {
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  margin-top: 10px;
+}
+
+.ManufacturingFacility-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ManufacturingFacility-text {
+  text-align: center;
+}
+
+.ManufacturingFacility-text h2 {
+  color: white;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.ManufacturingFacility-text p {
+  color: white;
+  font-size: 30px;
+  margin: 0;
+}
+
+/* who we are */
+.who-we-are-section {
+  width: 100%;
+}
+
+.who-we-are-text {
+  padding-top: 10%;
+  text-align: center;
+}
+
+.who-we-are-text h2 {
+  color: #44642f;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.who-we-are-text p {
+  color: #000000;
+  font-size: 20px;
+  margin-top: 25px;
+  font-weight: 400;
+
+}
+
+/* Stats */
+.Stats-Section {
+  width: 100%;
+  margin-top: 10%;
+
+}
+
+.Stats-Section-image {
+  margin-top: 20px;
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.Stats-Section-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.stats-text1 {
+  position: absolute;
+  top: 50%;
+  left: 80px;
+  transform: translateY(-50%);
+  color: white;
+}
+
+.stats-text1 h2 {
+  font-size: 80px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.stats-text1 p {
+  font-size: 24px;
+  margin: 0;
+}
+
+.stats-text2 {
+  position: absolute;
+  top: 50%;
+  right: 100px;
+  transform: translateY(-50%);
+  color: white;
+}
+
+.stats-text2 h2 {
+  font-size: 80px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.stats-text2 p {
+  font-size: 24px;
+  margin: 0;
+}
+
+/* ==========================
+   Why Choose Us
+========================== */
+
+.WhyChooseUs-section {
+  width: 100%;
+}
+
+.WhyChooseUs-text {
+  text-align: center;
+  margin-top: 8%;
+  width: 90%;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.WhyChooseUs-text h2 {
+  color: #44642F;
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.WhyChooseUs-text p {
+  color: #000;
+  font-size: 20px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+/* ===========================
+   Customer Speak
+=========================== */
+
+.CustomerSpeak-section {
+  width: 100%;
+  background: #44642F;
+  padding: 100px 0;
+  margin-top: 10%;
+}
+
+.CustomerSpeak-text {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+
+.CustomerSpeak-text h2 {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.CustomerSpeak-text p {
+  font-size: 20px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.center-line {
+  width: 75%;
+  height: 2px;
+  background: #fff799;
+  margin: 40px auto;
+}
+
+.CustomerSpeak-text h5 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* ===========================
+   Clients Served
+=========================== */
+
+.clients-served-section {
+  width: 100%;
+  padding: 100px 0;
+  height: 400px;
+}
+
+.clients-served-text {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.clients-served-text h2 {
+  color: #44642F;
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+
+.clients-served-text p {
+  color: #000;
+  font-size: 20px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+
+.inquiry-section {
+  background: #a8794c;
+  padding: 100px 0;
+  margin-top: 10%;
+}
+
+.inquiry-title {
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  margin-bottom: 60px;
+  font-weight: 300;
+}
+
+.col-md-6,
+.col-lg-4,
+.col-lg-8 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.inquiry-box {
+  display: flex;
+  gap: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  padding: 40px;
+}
+
+.inquiry-info {
+  flex: 1;
+  color: white;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  padding-right: 40px;
+}
+
+.inquiry-info h3 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.inquiry-info p {
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+.info-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.info-icons div {
+  text-align: center;
+}
+
+.info-icons h4 {
+  font-size: 30px;
+}
+
+.inquiry-form {
+  flex: 1.5;
+}
+
+.inquiry-form input,
+.inquiry-form textarea {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+.inquiry-form button {
+  background-color: #44642F;
+  color: white;
+  border: none;
+  padding: 15px 35px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.inquiry-form input,
+.inquiry-form textarea {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.6s ease;
+}
+
+.inquiry-form input:hover,
+.inquiry-form textarea:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.inquiry-form input:focus,
+.inquiry-form textarea:focus {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ==========================
+      RESPONSIVE
+========================== */
+
+/* =====================================
+   1400px
+===================================== */
+
+@media (max-width:1400px) {
+
+  .swiper-slide img {
+    margin-top: -95px;
+  }
+
+  .Product-Show-case-image {
+    height: 650px;
+  }
+
+  .Product-Show-case-text h2 {
+    font-size: 46px;
+  }
+
+  .ManufacturingFacility-section {
+    height: 550px;
+    margin-top: 10px;
+  }
+
+  .ManufacturingFacility-text h2 {
+    font-size: 55px;
+  }
+
+  .ManufacturingFacility-text p {
+    font-size: 28px;
+  }
+
+  .who-we-are-text {
+    padding-top: 8%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .who-we-are-text h2 {
+    font-size: 46px;
+  }
+
+  .who-we-are-text p {
+    font-size: 19px;
+    line-height: 34px;
+  }
+
+  .Stats-Section {
+    margin-top: 8%;
+  }
+
+  .Stats-Section-image {
+    height: 190px;
+  }
+
+  .stats-text1 {
+    left: 70px;
+  }
+
+  .stats-text2 {
+    right: 70px;
+  }
+
+  .stats-text1 h2,
+  .stats-text2 h2 {
+    font-size: 70px;
+  }
+
+  .stats-text1 p,
+  .stats-text2 p {
+    font-size: 22px;
+  }
+
+  .WhyChooseUs-text h2 {
+    font-size: 46px;
+  }
+
+  .WhyChooseUs-text p {
+    font-size: 19px;
+  }
+
+  .CustomerSpeak-text h2 {
+    font-size: 46px;
+  }
+
+  .CustomerSpeak-text p {
+    font-size: 19px;
+  }
+
+  .clients-served-section {
+    padding: 90px 0;
+  }
+
+  .clients-served-text h2 {
+    font-size: 46px;
+  }
+
+  .clients-served-text p {
+    font-size: 19px;
+  }
+
+}
+
+/* =====================================
+   1200px
+===================================== */
+
+@media (max-width:1200px) {
+
+  .swiper-slide img {
+    margin-top: -70px;
+  }
+
+  .Product-Show-case-image {
+    height: 600px;
+  }
+
+  .Product-Show-case-text h2 {
+    font-size: 42px;
+  }
+
+  .ManufacturingFacility-section {
+    height: 500px;
+    margin-top: 10px;
+  }
+
+  .ManufacturingFacility-text h2 {
+    font-size: 48px;
+  }
+
+  .ManufacturingFacility-text p {
+    font-size: 26px;
+  }
+
+  .who-we-are-text {
+    padding-top: 8%;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .who-we-are-text h2 {
+    font-size: 42px;
+  }
+
+  .who-we-are-text p {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .Stats-Section-image {
+    height: 180px;
+  }
+
+  .stats-text1 {
+    left: 60px;
+  }
+
+  .stats-text2 {
+    right: 60px;
+  }
+
+  .stats-text1 h2,
+  .stats-text2 h2 {
+    font-size: 60px;
+  }
+
+  .stats-text1 p,
+  .stats-text2 p {
+    font-size: 20px;
+  }
+
+  .WhyChooseUs-text {
+    width: 92%;
+  }
+
+  .WhyChooseUs-text h2 {
+    font-size: 42px;
+  }
+
+  .WhyChooseUs-text p {
+    font-size: 18px;
+  }
+
+  .CustomerSpeak-section {
+    padding: 90px 0;
+  }
+
+  .CustomerSpeak-text h2 {
+    font-size: 42px;
+  }
+
+  .CustomerSpeak-text p {
+    font-size: 18px;
+  }
+
+  .clients-served-section {
+    padding: 80px 0;
+  }
+
+  .clients-served-text h2 {
+    font-size: 42px;
+  }
+
+  .clients-served-text p {
+    font-size: 18px;
+  }
+
+}
+
+/* =====================================
+   992px
+===================================== */
+
+@media (max-width: 992px) {
+
+  .swiper-slide img {
+    margin-top: -45px;
+  }
+
+  .swiper-button-next {
+    right: 18px;
+  }
+
+  .swiper-button-prev {
+    left: 18px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 34px;
+    height: 34px;
+  }
+
+  .Product-Show-case-image {
+    height: 500px;
+  }
+
+  .Product-Show-case-text {
+    top: 18%;
+    width: 95%;
+  }
+
+  .Product-Show-case-text h2 {
+    font-size: 36px;
+    line-height: 1.3;
+  }
+
+  .ManufacturingFacility-section {
+    height: 450px;
+    margin-top: 10px;
+  }
+
+  .ManufacturingFacility-text h2 {
+    font-size: 42px;
+  }
+
+  .ManufacturingFacility-text p {
+    font-size: 24px;
+  }
+
+  .who-we-are-text {
+    padding-top: 9%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .who-we-are-text h2 {
+    font-size: 36px;
+  }
+
+  .who-we-are-text p {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .Stats-Section-image {
+    height: 170px;
+  }
+
+  .stats-text1 {
+    left: 45px;
+  }
+
+  .stats-text2 {
+    right: 45px;
+  }
+
+  .stats-text1 h2,
+  .stats-text2 h2 {
+    font-size: 50px;
+  }
+
+  .stats-text1 p,
+  .stats-text2 p {
+    font-size: 18px;
+  }
+
+  .WhyChooseUs-text {
+    margin-top: 70px;
+  }
+
+  .WhyChooseUs-text h2 {
+    font-size: 38px;
+  }
+
+  .WhyChooseUs-text p {
+    font-size: 17px;
+  }
+
+  .CustomerSpeak-section {
+    padding: 80px 0;
+  }
+
+  .CustomerSpeak-text h2 {
+    font-size: 38px;
+  }
+
+  .CustomerSpeak-text p {
+    font-size: 17px;
+  }
+
+  .CustomerSpeak-text h5 {
+    font-size: 22px;
+  }
+
+  .clients-served-section {
+    padding: 70px 0;
+  }
+
+  .clients-served-text h2 {
+    font-size: 38px;
+  }
+
+  .clients-served-text p {
+    font-size: 17px;
+  }
+
+}
+
+/* =====================================
+   768px
+===================================== */
+
+@media (max-width: 768px) {
+
+  .swiper-slide img {
+    margin-top: 0;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 32px;
+    height: 32px;
+  }
+
+  .swiper-button-next::before,
+  .swiper-button-prev::before {
+    font-size: 26px;
+  }
+
+  .Product-Show-case-image {
+    height: 420px;
+  }
+
+  .Product-Show-case-text {
+    top: 20%;
+    width: 95%;
+  }
+
+  .Product-Show-case-text h2 {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+
+  .ManufacturingFacility-section {
+    height: 400px;
+    margin-top: 10px;
+    background-attachment: scroll;
+    /* Mobile Fix */
+  }
+
+  .ManufacturingFacility-text h2 {
+    font-size: 34px;
+  }
+
+  .ManufacturingFacility-text p {
+    font-size: 20px;
+  }
+
+  .who-we-are-text {
+    padding-top: 10%;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .who-we-are-text h2 {
+    font-size: 32px;
+  }
+
+  .who-we-are-text p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 20px;
+  }
+
+  .Stats-Section {
+    margin-top: 60px;
+  }
+
+  .Stats-Section-image {
+    height: 150px;
+    margin-top: 15px;
+  }
+
+  .stats-text1 {
+    left: 30px;
+  }
+
+  .stats-text2 {
+    right: 30px;
+  }
+
+  .stats-text1 h2,
+  .stats-text2 h2 {
+    font-size: 40px;
+  }
+
+  .stats-text1 p,
+  .stats-text2 p {
+    font-size: 16px;
+  }
+
+  .WhyChooseUs-text {
+    width: 94%;
+    margin-top: 60px;
+  }
+
+  .WhyChooseUs-text h2 {
+    font-size: 32px;
+  }
+
+  .WhyChooseUs-text p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .CustomerSpeak-section {
+    padding: 70px 0;
+  }
+
+  .CustomerSpeak-text {
+    width: 94%;
+  }
+
+  .CustomerSpeak-text h2 {
+    font-size: 32px;
+  }
+
+  .CustomerSpeak-text p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .center-line {
+    width: 85%;
+  }
+
+  .CustomerSpeak-text h5 {
+    font-size: 20px;
+  }
+
+  .clients-served-section {
+    padding: 60px 0;
+  }
+
+  .clients-served-text {
+    width: 94%;
+  }
+
+  .clients-served-text h2 {
+    font-size: 32px;
+  }
+
+  .clients-served-text p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .inquiry-box {
+    flex-direction: column;
+  }
+
+  .inquiry-info {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    padding-bottom: 30px;
+  }
+
+  .inquiry-section .row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .inquiry-title {
+    font-size: 40px;
+  }
+
+}
+
+/* =====================================
+   576px
+===================================== */
+
+@media (max-width:576px) {
+
+  .swiper-slide img {
+    margin-top: 0;
+  }
+
+  .swiper-button-next {
+    right: 10px;
+  }
+
+  .swiper-button-prev {
+    left: 10px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 28px;
+    height: 28px;
+  }
+
+  .swiper-button-next::before,
+  .swiper-button-prev::before {
+    font-size: 22px;
+  }
+
+  .Product-Show-case-image {
+    height: 350px;
+  }
+
+  .Product-Show-case-text {
+    top: 22%;
+    width: 95%;
+  }
+
+  .Product-Show-case-text h2 {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  .ManufacturingFacility-section {
+    height: 340px;
+    margin-top: 10px;
+    background-attachment: scroll;
+  }
+
+  .ManufacturingFacility-text h2 {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .ManufacturingFacility-text p {
+    font-size: 18px;
+  }
+
+  .who-we-are-text {
+    padding-top: 12%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .who-we-are-text h2 {
+    font-size: 28px;
+  }
+
+  .who-we-are-text p {
+    font-size: 15px;
+    line-height: 26px;
+    margin-top: 18px;
+  }
+
+  .Stats-Section {
+    margin-top: 50px;
+  }
+
+  .Stats-Section-image {
+    height: 130px;
+  }
+
+  .stats-text1 {
+    left: 20px;
+  }
+
+  .stats-text2 {
+    right: 20px;
+  }
+
+  .stats-text1 h2,
+  .stats-text2 h2 {
+    font-size: 32px;
+  }
+
+  .stats-text1 p,
+  .stats-text2 p {
+    font-size: 14px;
+  }
+
+  .WhyChooseUs-text {
+    width: 95%;
+    margin-top: 50px;
+  }
+
+  .WhyChooseUs-text h2 {
+    font-size: 28px;
+  }
+
+  .WhyChooseUs-text p {
+    font-size: 15px;
+  }
+
+  .CustomerSpeak-section {
+    padding: 60px 0;
+  }
+
+  .CustomerSpeak-text h2 {
+    font-size: 28px;
+  }
+
+  .CustomerSpeak-text p {
+    font-size: 15px;
+  }
+
+  .CustomerSpeak-text h5 {
+    font-size: 18px;
+  }
+
+  .clients-served-section {
+    padding: 50px 0;
+  }
+
+  .clients-served-text h2 {
+    font-size: 28px;
+  }
+
+  .clients-served-text p {
+    font-size: 15px;
+  }
+
+}
+
+/* =====================================
+   425px
+===================================== */
+
+@media (max-width:425px) {
+
+  .swiper-slide img {
+    margin-top: 0;
+  }
+
+  .swiper-button-next {
+    right: 8px;
+  }
+
+  .swiper-button-prev {
+    left: 8px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 25px;
+    height: 25px;
+  }
+
+  .swiper-button-next::before,
+  .swiper-button-prev::before {
+    font-size: 20px;
+  }
+
+  .Product-Show-case-image {
+    height: 300px;
+  }
+
+  .Product-Show-case-text {
+    top: 15%;
+    width: 92%;
+  }
+
+  .Product-Show-case-text h2 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .ManufacturingFacility-section {
+    height: 300px;
+    margin-top: 10px;
+    background-attachment: scroll;
+  }
+
+  .ManufacturingFacility-text h2 {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  .ManufacturingFacility-text p {
+    font-size: 16px;
+  }
+
+  .who-we-are-text {
+    padding-top: 14%;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .who-we-are-text h2 {
+    font-size: 24px;
+  }
+
+  .who-we-are-text p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 16px;
+  }
+
+  .Stats-Section {
+    margin-top: 40px;
+  }
+
+  .Stats-Section-image {
+    height: 110px;
+  }
+
+  .stats-text1 {
+    left: 15px;
+  }
+
+  .stats-text2 {
+    right: 15px;
+  }
+
+  .stats-text1 h2,
+  .stats-text2 h2 {
+    font-size: 24px;
+  }
+
+  .stats-text1 p,
+  .stats-text2 p {
+    font-size: 12px;
+  }
+
+  .WhyChooseUs-text h2 {
+    font-size: 24px;
+  }
+
+  .WhyChooseUs-text p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .CustomerSpeak-section {
+    padding: 50px 0;
+  }
+
+  .CustomerSpeak-text h2 {
+    font-size: 24px;
+  }
+
+  .CustomerSpeak-text p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .center-line {
+    width: 90%;
+  }
+
+  .CustomerSpeak-text h5 {
+    font-size: 17px;
+  }
+
+  .clients-served-section {
+    padding: 45px 0;
+  }
+
+  .clients-served-text h2 {
+    font-size: 24px;
+  }
+
+  .clients-served-text p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+}
+
+/* =====================================
+   375px
+===================================== */
+
+@media (max-width:375px) {
+
+  .swiper-slide img {
+    margin-top: 0;
+  }
+
+  .swiper-button-next {
+    right: 5px;
+  }
+
+  .swiper-button-prev {
+    left: 5px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 22px;
+    height: 22px;
+  }
+
+  .swiper-button-next::before,
+  .swiper-button-prev::before {
+    font-size: 18px;
+  }
+
+  .Product-Show-case-image {
+    height: 260px;
+  }
+
+  .Product-Show-case-text {
+    top: 15%;
+  }
+
+  .Product-Show-case-text h2 {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .ManufacturingFacility-section {
+    height: 260px;
+    margin-top: 10px;
+    background-attachment: scroll;
+  }
+
+  .ManufacturingFacility-text h2 {
+    font-size: 20px;
+  }
+
+  .ManufacturingFacility-text p {
+    font-size: 14px;
+  }
+
+  .who-we-are-text {
+    padding-top: 15%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .who-we-are-text h2 {
+    font-size: 22px;
+  }
+
+  .who-we-are-text p {
+    font-size: 13px;
+    line-height: 22px;
+    margin-top: 15px;
+  }
+
+  .Stats-Section {
+    margin-top: 35px;
+  }
+
+  .Stats-Section-image {
+    height: 100px;
+  }
+
+  .stats-text1 {
+    left: 12px;
+  }
+
+  .stats-text2 {
+    right: 12px;
+  }
+
+  .stats-text1 h2,
+  .stats-text2 h2 {
+    font-size: 20px;
+  }
+
+  .stats-text1 p,
+  .stats-text2 p {
+    font-size: 11px;
+  }
+
+  .WhyChooseUs-text h2 {
+    font-size: 22px;
+  }
+
+  .WhyChooseUs-text p {
+    font-size: 13px;
+  }
+
+  .CustomerSpeak-text h2 {
+    font-size: 22px;
+  }
+
+  .CustomerSpeak-text p {
+    font-size: 13px;
+  }
+
+  .CustomerSpeak-text h5 {
+    font-size: 16px;
+  }
+
+  .clients-served-text h2 {
+    font-size: 22px;
+  }
+
+  .clients-served-text p {
+    font-size: 13px;
+  }
+
+}

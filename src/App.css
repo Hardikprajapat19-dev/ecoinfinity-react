@@ -345,11 +345,13 @@ body {
     line-height: 24px;
   }
 
-  .navbar-toggler {
-    position: relative;
-    right: -10px;
-    border: none;
-    box-shadow: none;
+  .navbar-toggler,
+  .navbar-toggler:focus,
+  .navbar-toggler:active,
+  .navbar-toggler:focus-visible{
+    border: none ;
+    outline: none ;
+    box-shadow: none ;
   }
 
   .product-item img {

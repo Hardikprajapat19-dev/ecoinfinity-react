@@ -6,7 +6,7 @@ import productImg1 from "../assets/plate-with-pastry-300x300.png";
 import productImg2 from "../assets/bowl-with-liquid-300x300.png";
 import productImg3 from "../assets/6-inch-square-plate-1-300x300.png";
 import productImg4 from "../assets/11-inch-round-plate-with-food-300x300.png";
-import logoImg from "../assets/logo-1.png"; // LOGO IMPORT KAR
+import logoImg from "../assets/logo-1.png"; 
 const aboutImages = [
   {
     src: productImg1,
@@ -31,11 +31,10 @@ const productImages = [
 const Navbar = () => {
   return (
     <div className="navbar-wrapper">
-      {/* LOGO - SABSE UPER CENTER ME */}
       <div className="logo-section">
         <img src={logoImg} alt="Ecoinfinity Logo" className="navbar-logo" />
       </div>
-      {/* NAVBAR */}
+
       <div className="row">
         <nav className="navbar navbar-expand-sm">
           <div className="container-fluid ">
@@ -58,7 +57,6 @@ const Navbar = () => {
                   </Link>
                 </li>
 
-                {/* Mega Menu Dropdown - About Us */}
                 <li className="nav-item dropdown position-static">
                   <Link
                     className="nav-link dropdown-toggle"
@@ -93,7 +91,6 @@ const Navbar = () => {
                   </div>
                 </li>
 
-                {/* Mega Menu Dropdown - Products */}
                 <li className="nav-item dropdown position-static">
                   <Link
                     className="nav-link dropdown-toggle"
